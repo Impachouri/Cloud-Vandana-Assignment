@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="form-heading">
+      <h1>Custom Survey Form</h1>
+      <img
+        class="image"
+        src="https://media.istockphoto.com/id/1273477705/photo/beautiful-smiling-young-asian-woman-standing-by-the-kitchen-counter-ordering-food-using.jpg?s=1024x1024&w=is&k=20&c=qwrgfyCBULk6vpO3KpnDopqX0ldjs2VbFXBjpAY99Ms="
+      />
+    </div>
+    <div class="container">
+      <form id="survey-form">
+        <div class="form-row">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" required />
+        </div>
+        <div class="form-row">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" required />
+        </div>
+        <div class="form-row">
+          <label for="date-of-birth">Date of Birth</label>
+          <input type="date" id="date-of-birth" required />
+        </div>
+        <div class="form-row">
+          <label for="country">Country</label>
+          <select id="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="INDIA">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Gender</label>
+          <select id="gender" required>
+            <option value="" disabled selected>Select your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Others</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="profession">Profession</label>
+          <input type="text" id="profession" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-row">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" required />
+        </div>
+        <div class="form-row">
+          <button type="submit" id="submit">Submit</button>
+          <button type="reset" id="clear">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="popup">
+      <div id="popup-content">
+        <h2>Form Submission Details</h2>
+        <p><strong>First Name:</strong> <span id="popup-first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="popup-last-name"></span></p>
+        <p>
+          <strong>Date of Birth:</strong> <span id="popup-date-of-birth"></span>
+        </p>
+        <p><strong>Country:</strong> <span id="popup-country"></span></p>
+        <p><strong>Gender:</strong> <span id="popup-gender"></span></p>
+        <p><strong>Profession:</strong> <span id="popup-profession"></span></p>
+        <p><strong>Email:</strong> <span id="popup-email"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="popup-mobile"></span></p>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
